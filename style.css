@@ -1,0 +1,202 @@
+/* Basic reset to remove default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container for the entire page */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Style */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Subheading for Balance and Sales Information */
+h3 {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Table Styling for the Lotto Counts */
+table {
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    border: 1px solid #ddd;
+}
+
+/* Styling for Input Fields */
+input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fafafa;
+}
+
+input[type="number"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Result section style */
+.result-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-section p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.result-section strong {
+    color: #4CAF50;
+}
+
+/* Button-like Text for Result Updates */
+span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .result-section p {
+        font-size: 16px;
+    }
+}
+
+/* Ensure the inputs fill their container */
+input[type="number"], input[type="text"], span {
+    width: 100%;
+}
+
+/* Add some spacing and alignment for labels */
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+/* Styled Inputs for Opening Balance and Net Sales */
+input[type="number"]#opening_balance, 
+input[type="number"]#activated_books,
+input[type="number"]#net_sales_credit {
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    display: inline-block;
+}
+
+input[type="number"]#net_sales_credit {
+    margin-right: 0;
+}
+
+/* Total Box Design */
+#total_sum, #total_balance, #instant_sold, #final_amount {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    display: inline-block;
+    min-width: 150px;
+    text-align: center;
+}
+
+#total_sum {
+    background-color: #2196F3;
+}
+
+#total_balance {
+    background-color: #ff9800;
+}
+
+#instant_sold {
+    background-color: #9c27b0;
+}
+
+#final_amount {
+    background-color: #f44336;
+}
+
+/* Responsive Inputs for Small Screens */
+@media (max-width: 600px) {
+    input[type="number"]#opening_balance, 
+    input[type="number"]#activated_books,
+    input[type="number"]#net_sales_credit {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .result-section {
+        padding: 10px;
+    }
+
+    #total_sum, #total_balance, #instant_sold, #final_amount {
+        width: 100%;
+        text-align: center;
+    }
+}
